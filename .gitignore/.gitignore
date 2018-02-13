@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+app/node_modules/
+
+.sass-cache/*
+.sass-cache/
+
+app/src/app.css.map
+*.txt
+*.sass-cache
+*.scss
