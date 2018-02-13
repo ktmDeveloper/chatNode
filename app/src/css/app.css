@@ -1,0 +1,172 @@
+@import "https://fonts.googleapis.com/css?family=Dosis:300,600";
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Dosis', sans-serif; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+button {
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  background-color: #262a61;
+  color: #0AD5C1; }
+
+button:hover {
+  box-shadow: 0 8px 20px rgba(121, 141, 152, 0.8);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.app-wrapper {
+  height: 100vh; }
+  .app-wrapper .app-messanger {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .app-wrapper .app-messanger .header {
+      display: flex;
+      flex-direction: row;
+      line-height: 50px;
+      height: 80px;
+      max-height: 80px;
+      padding: 5px 10px;
+      border-bottom: 1px solid #d9dce0; }
+      .app-wrapper .app-messanger .header .left {
+        width: 20%; }
+      .app-wrapper .app-messanger .header .content {
+        flex-grow: 1;
+        text-align: center; }
+      .app-wrapper .app-messanger .header .right {
+        width: 20%; }
+        .app-wrapper .app-messanger .header .right .user-bar {
+          line-height: 50px;
+          display: flex;
+          justify-content: flex-end;
+          padding: 0 10px; }
+        .app-wrapper .app-messanger .header .right .profile-name {
+          padding-right: 10px; }
+        .app-wrapper .app-messanger .header .right .profile-image {
+          vertical-align: middle; }
+          .app-wrapper .app-messanger .header .right .profile-image img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-top: 8px; }
+    .app-wrapper .app-messanger .main {
+      display: flex;
+      flex-direction: row;
+      height: 100%; }
+      .app-wrapper .app-messanger .main .sidebar-left {
+        padding: 15px;
+        width: 20%; }
+        .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel {
+          padding: 5px 0;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #d9dce0; }
+          .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel .user-image {
+            float: left;
+            margin-right: 5px; }
+            .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel .user-image img {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%; }
+          .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel .chanel-info h2 {
+            font-size: 18px;
+            font-weight: 100; }
+          .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel .chanel-info p {
+            font-size: 12px;
+            color: #686b70; }
+          .app-wrapper .app-messanger .main .sidebar-left .chanels .chanel:hover {
+            cursor: pointer;
+            background-color: #d9dce0; }
+      .app-wrapper .app-messanger .main .content {
+        border-right: 1px solid #d9dce0;
+        border-left: 1px solid #d9dce0;
+        flex-grow: 1;
+        max-width: 65%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 90%; }
+        .app-wrapper .app-messanger .main .content .message-container {
+          overflow-y: scroll;
+          padding: 20px; }
+        .app-wrapper .app-messanger .main .content .message {
+          justify-content: flex-start;
+          margin-bottom: 25px;
+          display: flex;
+          flex-direction: row;
+          min-height: fit-content; }
+          .app-wrapper .app-messanger .main .content .message .msg-img {
+            margin-right: 10px;
+            width: 30px; }
+            .app-wrapper .app-messanger .main .content .message .msg-img img {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%; }
+          .app-wrapper .app-messanger .main .content .message .msg-body {
+            background: #33d9b2;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 65%; }
+          .app-wrapper .app-messanger .main .content .message.me {
+            justify-content: flex-end; }
+            .app-wrapper .app-messanger .main .content .message.me .msg-body {
+              background: #34ace0; }
+        .app-wrapper .app-messanger .main .content .messagner-input {
+          border-right: 1px solid #d9dce0;
+          border-left: 1px solid #d9dce0;
+          position: absolute;
+          bottom: -10%;
+          left: -1px;
+          right: -1px;
+          height: 10%;
+          padding: 20px; }
+          .app-wrapper .app-messanger .main .content .messagner-input .text-input {
+            float: left;
+            width: 90%;
+            height: 100%;
+            position: relative; }
+            .app-wrapper .app-messanger .main .content .messagner-input .text-input .text-message {
+              width: 100%;
+              height: 100%;
+              padding: 0 10px;
+              max-height: 60px;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%); }
+          .app-wrapper .app-messanger .main .content .messagner-input .actions {
+            float: right;
+            height: 100%;
+            position: relative; }
+            .app-wrapper .app-messanger .main .content .messagner-input .actions button {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 0; }
+      .app-wrapper .app-messanger .main .current-profile {
+        width: 20%;
+        padding: 15px; }
+        .app-wrapper .app-messanger .main .current-profile .user-image {
+          float: left;
+          margin-right: 10px; }
+          .app-wrapper .app-messanger .main .current-profile .user-image img {
+            height: 100px;
+            weight: 100px; }
+        .app-wrapper .app-messanger .main .current-profile .chanel-info h2 {
+          font-size: 20px; }
+        .app-wrapper .app-messanger .main .current-profile .chanel-info p {
+          font-size: 15px;
+          color: #686b70; }
+
+/*# sourceMappingURL=app.css.map */
